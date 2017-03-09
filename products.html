@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-+ENW/yibaokMnme+vBLnHMphUYxHs34h9lpdbSLuAwGkOKFRl4C34WkjazBtb7eT" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="productstyle.css">
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
@@ -16,151 +18,239 @@
 
 
   </head>
-  <header>
-          <nav class="navbar navbar-default">
-              <div class="container-fluid">
-                  <div class="navbar-header">
-                      <a class="navbar-brand" href="#">Rain Preppers</a>
-                  </div>
-
-                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                      <ul class="nav navbar-nav navbar-right">
-                          <li><a href="#">People</a></li>
-                          <li><a href="#">Pets</a></li>
-                          <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Accessories<span class="caret"></span></a>
-                              <ul class="dropdown-menu">
-                                  <li><a href="#">Canoes</a></li>
-                                  <li><a href="#">Boats</a></li>
-                                  <li><a href="#">Arks</a></li>
-                              </ul>
-                          </li>
-                          <li>
-                              <form class="navbar-form">
-                                  <div class="form-group">
-                                      <input type="text" class="form-control" placeholder="Search">
-                                  </div>
-                                  <button type="submit" class="btn btn-default">Submit</button>
-                              </form>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-          </nav>
   <body>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="navbar-header">
+              <!--remove class="navbar-brand" from below to size logo-->
+              <a href="index.html"><img src="RPLogo250x50b.png" alt="Rain Preppers" class="logo"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="products.html">People</a></li>
+                <li><a href="products.html">Pets</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Accessories<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="products.html">Canoes</a></li>
+                    <li><a href="products.html">Boats</a></li>
+                    <li><a href="products.html">Arks</a></li>
+                  </ul>
+                </li>
+                <ul class="nav navbar-nav navbar-right">
+                  <li>
+                    <a href="checkout.html"> <span class="glyphicon glyphicon-shopping-cart" img style="margin: 0px 10px"></span> 3 - Items </a>
+                  </li>
+                  <li>
+                    <form class="navbar-form">
+                      <div class="form-group has-feedback">
+                        <input type="text" class="form-control">
+                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                      </div>
+                    </form>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
     <div class="container-fluid">
       <div class="row">
         <div class="page-heading">
-          <h1 class="text-center">Shop All Products</h1>
+          <h1 class="text-center"><a href="#"  id="shopall">Shop All Products</a></h1>
         </div>
         <hr>
       </div>
-      <div class="product row">
+      <div class="product-container row">
         <div class="sidebar col-xs-2">
           <h5><strong>Prep By Category</strong></h5>
           <ul class="list-unstyled">
-            <li>People</li>
-            <li>Pets</li>
-            <li>Acessories</li>
-            <li>Sale Items</li>
+            <li><a href="#" id="people">People</a></li>
+            <li><a href="#" id="pets">Pets</a></li>
+            <li><a href="#" id="boats">Boats</a></li>
+            <li><a href="#" id="sale">Sale Items</a></li>
           </ul>
           <hr>
           <h5><strong>Prep By Price</strong></h5>
           <ul class="list-unstyled">
-            <li>Under $50</li>
-            <li>$50-$100</li>
-            <li>$100-$750</li>
-            <li>Over $750</li>
+            <li><a href="#" id="under50">Under $50</li>
+            <li><a href="#" id="50to100">$50-$100</li>
+            <li><a href="#" id="100to750">$100-$950</li>
+            <li><a href="#" id="over950">Over $950</li>
           </ul>
         </div>
         <div class="col-xs-8">
-          <div class="row">
-          <div class="product col-xs-4">
+          <div class="row" id="parent-filter">
+          <div class="item product-visable people col-xs-4" data-price="125">
             <div class="image">
-              <img src="http://placehold.it/300?text=product">
+              <img src="http://workingperson.com/media/catalog/product/cache/1/image/400x/9df78eab33525d08d6e5fb8d27136e95/7/0/70306-lyw-underarmourf_01.jpg">
             </div>
               <h4><strong>Men's Rain Coat</strong></h4>
               <h5>$125</h5>
           </div>
-          <div class="product col-xs-4">
+          <div class="item product-visable people col-xs-4" data-price="125">
             <div class="image">
-              <img src="http://placehold.it/300?text=product">
+              <img src="https://www.rankandstyle.com/media/products/p/petit-bateau-iconic-womens-raincoat-fall-rain-_1.jpg">
             </div>
               <h4><strong>Women's Rain Coat</strong></h4>
               <h5>$125</h5>
           </div>
-          <div class="product col-xs-4">
+          <div class="item product-visable pets col-xs-4" data-price="35">
             <div class="image">
-              <img src="http://placehold.it/300?text=product">
+              <img src="https://blog.banggood.com/wp-content/uploads/2014/07/ZA275GuardianGearDogRainJacketYellowStandingView.jpg">
             </div>
               <h4><strong>Dog's Rain Coat</strong></h4>
               <h5>$35</h5>
           </div>
-          <div class="product col-xs-4">
+          <div class="item product-visable people col-xs-4" data-price="70">
             <div class="image">
-              <img src="http://placehold.it/300?text=product">
+              <img src="http://www.shoesbagsfashions.com/wp-content/uploads/2015/09/yellow-rain-boots-1.jpg">
             </div>
               <h4><strong>Unisex Rain Boots</strong></h4>
               <h5>$70</h5>
           </div>
-          <div class="product col-xs-4">
+          <div class="item product-visable pets col-xs-4" data-price="40">
             <div class="image">
-              <img src="http://placehold.it/300?text=product">
+              <img src="https://s-media-cache-ak0.pinimg.com/564x/8b/e2/4d/8be24d2f23c43da9d99a48267ca540f7.jpg">
+            </div>
+              <h4><strong>Dog's Rain Booties</strong></h4>
+              <h5>$40</h5>
+          </div>
+          <div class="item product-visable people sale col-xs-4" data-price="25">
+            <div class="image">
+              <img src="https://ortliebusa.com/wp-content/uploads/2016/03/D962.jpg">
             </div>
               <h4><strong>Unisex Rain Hat</strong></h4>
-              <h5>$25</h5>
+              <h5><strike>$40</strike>$25</h5>
           </div>
-          <div class="people product col-xs-4">
+          <div class="item product-visable pets col-xs-4" data-price="15">
             <div class="image">
-              <img src="http://placehold.it/300?text=product">
+              <img src="https://s-media-cache-ak0.pinimg.com/736x/68/e4/18/68e418644a953b5ed2cf0ba888b083d4.jpg">
             </div>
               <h4><strong>Dog's Rain Hat</strong></h4>
               <h5>$15</h5>
           </div>
-          <div class="product col-xs-4">
+          <div class="item product-visable people col-xs-4" data-price="15">
             <div class="image">
-              <img src="http://placehold.it/300?text=product">
+              <img src="http://www.zappos.com/images/z/2/1/7/3/1/6/2173168-3-4x.jpg">
             </div>
               <h4><strong>Small Umbrella</strong></h4>
               <h5>$15</h5>
           </div>
-          <div class="product col-xs-4">
+          <div class="item product-visable people col-xs-4" data-price="30">
             <div class="image">
-              <img src="http://placehold.it/300?text=product">
+              <img src="http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=109657552">
             </div>
               <h4><strong>Large Umbrella</strong></h4>
               <h5>$30</h5>
           </div>
-          <div class="product col-xs-4">
+          <div class="item product-visable pets sale col-xs-4" data-price="15">
             <div class="image">
-              <img src="http://placehold.it/300?text=product">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/71d-Ur9dbqL._SY450_.jpg">
+            </div>
+              <h4><strong>Dog's Umbrella</strong></h4>
+              <h5><strike>$20</strike>$15</h5>
+          </div>
+          <div class="item product-visable boat sale col-xs-4" data-price="20000">
+            <div class="image">
+              <img src="http://static.wixstatic.com/media/1ee96f_111a4de335b44775904901dadf675440.jpg_srz_560_372_85_22_0.50_1.20_0.00_jpg_srz">
             </div>
               <h4><strong>Small Boat</strong></h4>
-              <h5><strike>$25000</strike> $20000</h5>
+              <h5><strike>$25,000</strike> $20,000</h5>
           </div>
-          <div class="product col-xs-4">
+          <div class="item product-visable boat sale col-xs-4" data-price="40000">
             <div class="image">
-              <img src="http://placehold.it/300?text=product">
+              <img src="https://www.fraseryachts.com/uploads/image/yachts/my-paradis/MY_PARADIS_running_main_web.jpg">
             </div>
               <h4><strong>Large Boat</strong></h4>
-              <h5><strike>$50000</strike>$40000</h5>
+              <h5><strike>$50,000</strike>$40,000</h5>
           </div>
-          <div class="product col-xs-4">
+          <div class="item product-visable boat col-xs-4" data-price="950">
             <div class="image">
-              <img src="http://placehold.it/300?text=product">
+              <img src="http://noahsmarine.com/assets/images/Prospector_11.jpg">
             </div>
               <h4><strong>Canoe</strong></h4>
               <h5>$950</h5>
           </div>
-          <div class="product col-xs-4">
+          <div class="item product-visable boat col-xs-4" data-price="750000">
             <div class="image">
-              <img src="http://placehold.it/300?text=product">
+              <img src="http://christianfunnypictures.com/wp-content/uploads/2012/12/ark-4.jpg">
             </div>
               <h4><strong>Ark</strong></h4>
-              <h5>$750000</h5>
+              <h5>$750,000</h5>
           </div>
     </div>
     </div>
+</main>
 
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-3">
+                    <h4>Our Location</h4>
+                    <div class="map"></div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2335.0996180563834!2d-122.33219199423836!3d47.59887576359453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1488952490999" width="300" height="200" frameborder="0" style="border:0"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-xs-3">
+                    <h4>Featured Items</h4>
+                    <ul class="list-unstyled">
+                        <li class="sales-li">
+                            <img src="http://placehold.it/75">
+                            <p><a href="products.html">Men's Rain Coat</a><br> $125
+                            </p>
+                        </li>
+                        <li class="sales-li">
+                            <img src="http://placehold.it/75">
+                            <p><a href="products.html">Ark</a><br> $750,000
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-2">
+                    <h4>More Info</h4>
+                    <ul class="list-unstyled">
+                        <li><a href=" ">About Us</a></li>
+                        <li><a href=" ">FAQ</a></li>
+                        <li><a href=" ">Contact Us</a></li>
+                        <li><a href=" ">Order Status</a></li>
+                        <li><a href=" ">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-2">
+                    <h4>Helpful Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="">Order Catalog</a></li>
+                        <li><a href=" ">Shipping</a></li>
+                        <li><a href=" ">Size Chart</a></li>
+                        <li><a href=" ">Gift Orders</a></li>
+                        <li><a href=" ">Prvacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-2">
+                    <h4>Accounts</h4>
+                    <ul class="list-unstyled">
+                        <li><a href=" ">Create Account</a></li>
+                        <li><a href=" ">Sign In</a></li>
+                        <li><a href=" ">Rewards</a></li>
+                        <li><a href=" ">Wishlist</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="legal-data">
+                        <p>Copyright © 2017 | Rain Preppers, LLC. | All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
   </body>
 </html>
