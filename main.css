@@ -1,3 +1,9 @@
+/* remove these to revert color back*/
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: rgb(32, 173, 210);
+}
+
 html, body {
   height: 100%;
 }
@@ -10,6 +16,16 @@ p strike {
   border-radius: 0%;
 }
 
+.navbar-brand {
+  font-size: 24px;
+}
+
+/*remove this if logo is removed*/
+.navbar-brand img {
+   max-height: 160%;
+   max-width: 160%;
+ }
+
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
     width: 450px;
@@ -20,6 +36,16 @@ p strike {
 .product-section div {
   padding-bottom: 25px;
   padding-top: 25px;
+}
+
+/* remove these to revert color back*/
+.product-section a {
+  color: rgb(32, 173, 210);
+}
+
+/* remove these to revert color back*/
+.product-section a:hover {
+  color: rgb(110, 167, 181);
 }
 
 footer {
@@ -38,6 +64,16 @@ footer, li {
 list-style: none;
 }
 
+/* remove these to revert color back*/
+footer a {
+  color: rgb(32, 173, 210);
+}
+
+/* remove these to revert color back*/
+footer a:hover {
+  color: rgb(110, 167, 181);
+}
+
 .sales-li {
   float: left;
   padding: 10px;
@@ -52,7 +88,14 @@ list-style: none;
   padding-top: 20px;
 }
 
-button {
-  position: relative;
+.divbutton1, .divbutton2, .divbutton3 {
+  position: absolute;
+  bottom: 115px;
+  left: 78px;
+  background: none;
+}
+
+.button1, .button2, .button3 {
   display: none;
+  border-radius: 0%;
 }
