@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Rain Preppers</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-+ENW/yibaokMnme+vBLnHMphUYxHs34h9lpdbSLuAwGkOKFRl4C34WkjazBtb7eT" crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <!-- Jquery -->
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script defer src="homepg.js"></script>
+    </head>
+
+    <body>
+        <div id="myModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Newsletter</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Be like Noah and never be caught unprepared!<br></p>
+                        <p>Sign up for our newsletter to get updates on sales and new products.</p>
+                        <form class="subscribe-form" onsubmit="alert('Thank you!');">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,10}$" required="yes">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="navbar-header">
+                            <!--remove class="navbar-brand" from below to size logo-->
+                            <a href="index.html"><img src="RPLogo250x50b.png" alt="Rain Preppers" class="logo"></a>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="products.html">People</a></li>
+                                <li><a href="products.html">Pets</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Accessories<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="products.html">Canoes</a></li>
+                                        <li><a href="products.html">Boats</a></li>
+                                        <li><a href="products.html">Arks</a></li>
+                                    </ul>
+                                </li>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li>
+                                        <a href="checkout.html"> <span class="glyphicon glyphicon-shopping-cart" img style="margin: 0px 10px"></span> 3 - Items </a>
+                                    </li>
+                                    <li>
+                                        <form class="navbar-form">
+                                            <div class="form-group has-feedback">
+                                                <input type="text" class="form-control">
+                                                <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                            </div>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="gabriel-santiago-19716.jpg" alt="...">
+                                <div class="carousel-caption">
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="luca-bravo-202465.jpg" alt="...">
+                                <div class="carousel-caption">
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="pavel-badrtdinov-40285.jpg" alt="...">
+                                <div class="carousel-caption">
+
+                                </div>
+                            </div>
+                            ...
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3 class="text-center"><br>Check Out These Deals!</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="product-section">
+                        <div class="col-xs-4">
+                            <img src="http://placehold.it/250" class="feature1">
+                            <p><a href="products.html">Unisex Rain Hat</a><br>
+                                <strike>$40</strike> $25</p>
+                            <p class="ratings">
+                                ★★★★★ (<span>3 reviews</span>)
+                            </p>
+                            <div class="divbutton1">
+                                <button type="button" class="button1">
+                            <p><a href="index.html" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a></p>
+                            </button>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="http://placehold.it/250" class="feature2">
+                            <p><a href="products.html">Dog's Umbrella</a><br>
+                                <strike>$20</strike> $15 </p>
+                            <p class="ratings">
+                                ★★★☆☆ (<span>1 review</span>)
+                            </p>
+                            <div class="divbutton2">
+                                <button type="button" class="button2">
+                            <p><a href="index.html" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a></p>
+                            </button>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="http://placehold.it/250" class="feature3">
+                            <p><a href="products.html">Small Boat</a><br>
+                                <strike>$25,000</strike> $20,000</p>
+                            <p class="ratings">
+                                ★★★★☆ (<span>6 reviews</span>)
+                            </p>
+                            <div class="divbutton3">
+                                <button type="button" class="button3">
+                            <p><a href="index.html" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a></p>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <h4>Our Location</h4>
+                        <div class="map"></div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2335.0996180563834!2d-122.33219199423836!3d47.59887576359453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1488952490999" width="300" height="200" frameborder="0" style="border:0"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="col-xs-3">
+                        <h4>Featured Items</h4>
+                        <ul class="list-unstyled">
+                            <li class="sales-li">
+                                <img src="http://placehold.it/75">
+                                <p><a href="products.html">Men's Rain Coat</a><br> $125
+                                </p>
+                            </li>
+                            <li class="sales-li">
+                                <img src="http://placehold.it/75">
+                                <p><a href="products.html">Ark</a><br> $750,000
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-2">
+                        <h4>More Info</h4>
+                        <ul class="list-unstyled">
+                            <li><a href=" ">About Us</a></li>
+                            <li><a href=" ">FAQ</a></li>
+                            <li><a href=" ">Contact Us</a></li>
+                            <li><a href=" ">Order Status</a></li>
+                            <li><a href=" ">Returns</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-2">
+                        <h4>Helpful Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="">Order Catalog</a></li>
+                            <li><a href=" ">Shipping</a></li>
+                            <li><a href=" ">Size Chart</a></li>
+                            <li><a href=" ">Gift Orders</a></li>
+                            <li><a href=" ">Prvacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-2">
+                        <h4>Accounts</h4>
+                        <ul class="list-unstyled">
+                            <li><a href=" ">Create Account</a></li>
+                            <li><a href=" ">Sign In</a></li>
+                            <li><a href=" ">Rewards</a></li>
+                            <li><a href=" ">Wishlist</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="legal-data">
+                            <p>Copyright © 2017 | Rain Preppers, LLC. | All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>
