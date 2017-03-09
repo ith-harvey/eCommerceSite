@@ -30,12 +30,12 @@
                     <div class="modal-body">
                         <p>Be like Noah and never be caught unprepared!<br></p>
                         <p>Sign up for our newsletter to get updates on sales and new products.</p>
-                        <form class="subscribe-form">
+                        <form class="subscribe-form" onsubmit="alert('Thank you!');">
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Name">
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email Address">
+                                <input type="email" class="form-control" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,10}$" required="yes">
                             </div>
                             <button type="submit" class="btn btn-primary">Subscribe</button>
                         </form>
