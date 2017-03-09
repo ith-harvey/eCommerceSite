@@ -16,36 +16,66 @@
 
         <!-- Latest compiled and minified JavaScript -->
         <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script defer src="homepg.js"></script>
     </head>
 
     <body>
+        <div id="myModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Newsletter</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Be like Noah and never be caught unprepared!<br></p>
+                        <p>Sign up for our newsletter to get updates on sales and new products.</p>
+                        <form class="subscribe-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email Address">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <header>
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="#">Rain Preppers</a>
+                        <!--remove class="navbar-brand" from below to size logo-->
+                        <a href="index.html"><img src="RPLogo250x50b.png" alt="Rain Preppers" class="logo"></a>
                     </div>
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">People</a></li>
-                            <li><a href="#">Pets</a></li>
+                            <li><a href="products.html">People</a></li>
+                            <li><a href="products.html">Pets</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Accessories<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Canoes</a></li>
-                                    <li><a href="#">Boats</a></li>
-                                    <li><a href="#">Arks</a></li>
+                                    <li><a href="products.html">Canoes</a></li>
+                                    <li><a href="products.html">Boats</a></li>
+                                    <li><a href="products.html">Arks</a></li>
                                 </ul>
                             </li>
-                            <li>
-                                <form class="navbar-form">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Search">
-                                    </div>
-                                    <button type="submit" class="btn btn-default">Submit</button>
-                                </form>
-                            </li>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a href="checkout.html"> <span class="glyphicon glyphicon-shopping-cart" img style="margin: 0px 10px"></span> 3 - Items </a>
+                                </li>
+                                <li>
+                                    <form class="navbar-form">
+                                        <div class="form-group has-feedback">
+                                            <input type="text" class="form-control">
+                                            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                        </div>
+                                    </form>
+                                </li>
+                            </ul>
                         </ul>
                     </div>
                 </div>
@@ -98,44 +128,49 @@
         <main>
             <div class="container">
                 <div class="col-xs-12">
-                    <h3 class="text-center"><br>New Arrivals</h3>
+                    <h3 class="text-center"><br>Check Out These Deals!</h3>
                 </div>
             </div>
             <div class="container">
-                <div class="col-xs-4">
-                    <img src="http://placehold.it/250">
-                    <p><a href="#">Red and Black Striped Poncho</a><br>
-                        <strike>$30.00</strike> $24.00</p>
-                    <div class="divbutton">
-                        <button type="button" style="display: none;">
-                            <p><a href="#" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a></p>
+                <div class="product-section">
+                    <div class="col-xs-4">
+                        <img src="http://placehold.it/250" class="feature1">
+                        <p><a href="products.html">Unisex Rain Hat</a><br>
+                            <strike>$40</strike> $25</p>
+                        <p class="ratings">
+                            ★★★★★ (<span>3 reviews</span>)
+                        </p>
+                        <div class="divbutton1">
+                            <button type="button" class="button1">
+                            <p><a href="index.html" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a></p>
                             </button>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xs-4">
-                    <img src="http://placehold.it/250">
-                    <p><a href="#">Red and Black Striped Poncho</a><br>
-                        <strike>$30.00</strike> $24.00</p>
-                    <div class="divbutton">
-                        <button type="button">
-                            <p><a href="#" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a></p>
+                    <div class="col-xs-4">
+                        <img src="http://placehold.it/250" class="feature2">
+                        <p><a href="products.html">Dog's Umbrella</a><br>
+                            <strike>$20</strike> $15 </p>
+                        <p class="ratings">
+                            ★★★☆☆ (<span>1 review</span>)
+                        </p>
+                        <div class="divbutton2">
+                            <button type="button" class="button2">
+                            <p><a href="index.html" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a></p>
                             </button>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xs-4">
-                    <img src="http://placehold.it/250">
-                    <p><a href="#">Red and Black Striped Poncho</a><br>
-                        <strike>$30.00</strike> $24.00</p>
-                    <div class="divbutton">
-                        <button type="button" style="display: none;">
-                            <p><a href="#" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a></p>
+                    <div class="col-xs-4">
+                        <img src="http://placehold.it/250" class="feature3">
+                        <p><a href="products.html">Small Boat</a><br>
+                            <strike>$25,000</strike> $20,000</p>
+                        <p class="ratings">
+                            ★★★★☆ (<span>6 reviews</span>)
+                        </p>
+                        <div class="divbutton3">
+                            <button type="button" class="button3">
+                            <p><a href="index.html" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a></p>
                             </button>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="col-xs-12" text-center>
-                        <h3><br><br><br></h3>
-                        <!--margin this instead-->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -147,26 +182,21 @@
                     <div class="col-xs-3">
                         <h4>Our Location</h4>
                         <div class="map"></div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2335.0996180563834!2d-122.33219199423836!3d47.59887576359453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1488952490999" width="300" height="300" frameborder="0" style="border:0"
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2335.0996180563834!2d-122.33219199423836!3d47.59887576359453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1488952490999" width="300" height="200" frameborder="0" style="border:0"
                             allowfullscreen></iframe>
                     </div>
                     <div class="col-xs-3">
-                        <h4>Featured Sales</h4>
+                        <h4>Featured Items</h4>
                         <ul class="list-unstyled">
-                            <li>
-                                <img src="http://placehold.it/50">
-                                <p><a href="#">Polka-Dotted Umbrella</a><br>
-                                    <strike>$65.00</strike> $52.00</p>
+                            <li class="sales-li">
+                                <img src="http://placehold.it/75">
+                                <p><a href="products.html">Men's Rain Coat</a><br> $125
+                                </p>
                             </li>
-                            <li>
-                                <img src="http://placehold.it/50">
-                                <p><a href="#">Red and Black Striped Poncho</a><br>
-                                    <strike>$30.00</strike> $24.00</p>
-                            </li>
-                            <li>
-                                <img src="http://placehold.it/50">
-                                <p><a href="#">Neon Canoe</a><br>
-                                    <strike>$295.00</strike> $236.00</p>
+                            <li class="sales-li">
+                                <img src="http://placehold.it/75">
+                                <p><a href="products.html">Ark</a><br> $750,000
+                                </p>
                             </li>
                         </ul>
                     </div>
@@ -183,8 +213,8 @@
                     <div class="col-xs-2">
                         <h4>Helpful Links</h4>
                         <ul class="list-unstyled">
+                            <li><a href="">Order Catalog</a></li>
                             <li><a href=" ">Shipping</a></li>
-                            <li><a href=" ">Order Catalog</a></li>
                             <li><a href=" ">Size Chart</a></li>
                             <li><a href=" ">Gift Orders</a></li>
                             <li><a href=" ">Prvacy Policy</a></li>
