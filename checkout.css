@@ -1,0 +1,17 @@
+input.invalid,select.invalid {
+	border: 1px solid orange;
+  box-shadow: 0px 1px 1px orange ,0px 0px 8px red;
+  color: red;
+}
+input.valid, select.valid {
+  border: 1px solid lightblue;
+  box-shadow: 0px 1px 1px lightblue ,0px 0px 8px lightblue;
+}
+.message {
+  height: 40px;
+  padding: 10px;
+}
+input:focus {
+  border: 1px solid lightblue;
+  box-shadow: 0px 1px 1px lightblue ,0px 0px 8px lightblue;
+}
