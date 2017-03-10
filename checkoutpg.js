@@ -3,6 +3,7 @@ var ccErrors= [];
 var errors = false;
 
 $('#purchase').on('click',function(e){
+  errors = false;
   e.preventDefault();
   validateShipInput();
   validateBillInput();
@@ -11,6 +12,7 @@ $('#purchase').on('click',function(e){
     displayErrors();
   }
   else {
+    $('.message').removeClass('alert-danger');
     $('.message').addClass('alert-info');
     $('.message').append(`<strong>Thank you for purchase!</strong>`);
     document.getElementById('checkout-form').reset()
