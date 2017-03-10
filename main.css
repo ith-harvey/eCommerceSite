@@ -63,7 +63,7 @@ footer {
     padding: 20px 0px;
 }
 
-footer, h4 {
+footer {
     font-size: 18px;
     color: white;
     text-align: left;
@@ -75,6 +75,8 @@ footer, li {
 
 footer h4 {
     font-size: 2.25rem;
+    color: white;
+    text-align: left;
 }
 
 
@@ -122,7 +124,7 @@ footer a:hover {
 .divbutton1, .divbutton2, .divbutton3 {
     position: absolute;
     bottom: 115px;
-    left: 78px;
+    left: 110px;
     background: none;
 }
 
@@ -166,4 +168,32 @@ footer a:hover {
 
 #leftway:hover, #rightway:hover {
     opacity: .3;
+}
+
+..page-heading a:hover {
+    color: rgb(110, 167, 181);
+}
+
+.page-heading h1 a  {
+  color: rgb(32, 173, 210);
+}
+
+.sidebar a {
+    color: rgb(32, 173, 210);
+}
+
+.saidebar a:hover {
+    color: rgb(110, 167, 181);
+}
+
+#parent-filter h4 {
+  color: rgb(32, 173, 210);
+}
+
+#parent-filter h5 {
+  color: black;
+}
+
+#parent-filter strike {
+  color: red;
 }
