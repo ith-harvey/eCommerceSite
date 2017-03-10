@@ -5,17 +5,17 @@ function shopAllProducts(element){
 
 function sortPeople(element){
 $('.pets, .boat, .sale, .people').removeClass('product-hidden')
-$('.pets, .boat, .sale').addClass('product-hidden')
+$('.pets, .boat').addClass('product-hidden')
 };
 
 function sortPets(element){
 $('.pets, .boat, .sale, .people').removeClass('product-hidden')
-$('.people, .boat, .sale').addClass('product-hidden')
+$('.people, .boat').addClass('product-hidden')
 };
 
 function sortBoat(element){
 $('.pets, .boat, .sale, .people').removeClass('product-hidden')
-$('.pets, .people, .sale').addClass('product-hidden')
+$('.pets, .people').addClass('product-hidden')
 };
 
 function sortSale(element){
